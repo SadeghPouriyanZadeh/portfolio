@@ -1,43 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1>My Personal Portfolio</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Insert your about me content here.</p>
-      </section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li><a href="#">Project 1</a></li>
-          <li><a href="#">Project 2</a></li>
-          <li><a href="#">Project 3</a></li>
+<html>
+<head>
+<title>Sadegh Pouriyan Zadeh Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #5e5b5b;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://media.licdn.com/dms/image/C4E03AQEPWZELFP8hew/profile-displayphoto-shrink_200_200/0/1661282902232?e=1682553600&v=beta&t=ffkq-UKLUxj7EdTi2dXjAuEAWQr2WyAcBiLLqrhQPEI" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>About Me</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-terminal w3-xxlarge"></i>
+    <p>Projects</p>
+  </a>
+  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>Work Experience</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-graduation-cap w3-xxlarge"></i>
+    <p>Education</p>
+  </a>
+  <a href="#certifications" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-drivers-license-o w3-xxlarge"></i>
+    <p>Certifications</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>Contact Me</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div> -->
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sadegh</h1>
+    <p>a Machine Learning Engineer</p>
+    <img src="https://cdn.discordapp.com/attachments/1008571244200861726/1077210557804986379/Sadegh_Pouriyan_Zadeh_a_28_mm_photo_of_a_dark_circular_logo_wit_aaf1087e-b73b-48e8-92f1-cbd8597e418b.png" alt="my logo" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Sadegh Pouriyan Zadeh</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey">As a 27-year-old self-taught ML Engineer, I have a deep understanding of the technology behind machine learning and a strong foundation in computer science and programming. I have taken the initiative to learn and develop my skills outside of formal academic settings, which demonstrates my high level of motivation, discipline, and drive.
+
+      My passion for Artificial Intelligence and programming is reflected in the work I have done, the projects I have worked on, and the problems I have solved. I am driven by a desire to create innovative and cutting-edge solutions that leverage the power of machine learning to address real-world challenges and improve people's lives. This passion and motivation have led me to explore various aspects of AI, from natural language processing and computer vision to deep learning and neural networks.
+    </p>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Projects Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="projects"></div>
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for projects -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">License Plate Detection and OCR</li>
+          <li class="w3-padding-16">License Plates of Iran Country</li>
+          <li class="w3-padding-16">Object Detection using YOLOv7</li>
+          <li class="w3-padding-16">OCR by Synthesizing Fake License Plate Images</li>
+          <li class="w3-padding-16">Object-Oriented Implementation</li>
+          <li class="w3-padding-16">
+            <h2>99.96 %</h2>
+            <span class="w3-opacity">Detection Accuracy</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Try it!</button>
+          </li>
         </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>Phone: 123-456-7890</p>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © 2023 My Personal Portfolio.
-      </p>
-    </footer>
-  </body>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid tables -->
+    </div>
+    
+    <!-- Work Experiences Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="work"></div>
+    <h2 class="w3-text-light-grey">Work Experiences</h2>
+    <hr style="width:200px" class="w3-opacity">
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Education Section -->
+  <div class="w3-padding-64 w3-content" id="education">
+    <h2 class="w3-text-light-grey">Education</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Tehran, Iran</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +98 903 922 6003</p>
+      <p class="w3-hover-text-white" style="font-size:18px"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Email: pouriyan.sadegh@gmail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="fa fa-facebook-official w3-hover-opacity" style="text-decoration:None"></a>
+    <a href="https://www.w3schools.com/w3css/instagram.asp" target="_blank" class="fa fa-instagram w3-hover-opacity" style="text-decoration:None"></a>
+    <i class="fa fa-facebook-official w3-hover-opacity">
+      
+
+    </i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
